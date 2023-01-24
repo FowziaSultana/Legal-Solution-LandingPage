@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap");
-
+/*---------------------------------------------- utilities begin ---------------------------------- */
 :root {
   --primary_color: #b68c5a;
 }
@@ -8,11 +8,16 @@ body {
 }
 p {
   font-size: 14px;
+  color: #707070;
 }
 .font_eb {
   font-family: "EB Garamond", serif;
   font-weight: 800;
   color: #414040;
+}
+
+.bg-lh-primary {
+  background-color: var(--primary_color);
 }
 .lh-btn {
   background-color: var(--primary_color);
@@ -47,7 +52,7 @@ p {
 }
 .banner-input {
   width: 500px;
-  height: 64px;
+  height: 55px;
   background: #ffffff;
   border-radius: 8px;
   color: #a0a0a0;
@@ -65,8 +70,11 @@ p {
   position: absolute;
   z-index: 2;
   top: 20%;
-  color: #f3f3f3;
+  color: #f3f3f3 !important;
   font-weight: 400;
+}
+.my-caption p {
+  color: #f3f3f3;
 }
 .my-item:after {
   content: "";
@@ -83,8 +91,33 @@ p {
   width: 20%;
 }
 
+/* -------------------------------------- FaQ begin------------------------------------------ */
+.faq div {
+  color: #707070 !important;
+}
+
+/* -------------------------------------- Contact begin------------------------------------------ */
+
+.contact_card {
+  background: #f3f3f3;
+}
+
+.my-input {
+  background: #f3f3f3 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  font-size: 18px !important;
+  height: 50px;
+}
+.lh-send-btn {
+  width: 100%;
+  height: 60px;
+}
+
+/* -------------------------------------- footer begin------------------------------------------ */
+
 @media only screen and (max-width: 600px) {
-  /* ---------------------------------------header begin------------------------ */
+  /* ---------------------------------------header responsive begin------------------------ */
 
   .banner {
     max-width: 100%;
@@ -100,7 +133,7 @@ p {
     height: 50px;
     font-size: 12px;
   }
-  /* ---------------------------------------practice area begin------------------------ */
+  /* ---------------------------------------practice area responsive begin------------------------ */
 
   .practice_areas div {
     border: 1px solid #e7e7e7 !important;
@@ -111,7 +144,7 @@ p {
     );
   }
 
-  /* ---------------------------------------slider begin------------------------ */
+  /* ---------------------------------------slider responsive begin------------------------ */
   .my-caption {
     top: 5%;
   }
