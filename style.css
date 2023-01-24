@@ -59,8 +59,33 @@ p {
 .a_area {
   background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
 }
+/* -------------------------------------- slider begin------------------------------------------ */
+
+.my-caption {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  color: #f3f3f3;
+  font-weight: 400;
+}
+.my-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.user {
+  position: relative;
+  z-index: 2;
+  width: 20%;
+}
 
 @media only screen and (max-width: 600px) {
+  /* ---------------------------------------header begin------------------------ */
+
   .banner {
     max-width: 100%;
     height: 100%;
@@ -75,6 +100,8 @@ p {
     height: 50px;
     font-size: 12px;
   }
+  /* ---------------------------------------practice area begin------------------------ */
+
   .practice_areas div {
     border: 1px solid #e7e7e7 !important;
     background: linear-gradient(
@@ -82,5 +109,18 @@ p {
       #f3f3f3 0%,
       rgba(243, 243, 243, 0) 100%
     );
+  }
+
+  /* ---------------------------------------slider begin------------------------ */
+  .my-caption {
+    top: 5%;
+  }
+  .my-caption > p {
+    font-size: 8px !important;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .user {
+    display: none;
   }
 }
