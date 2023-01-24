@@ -156,4 +156,8 @@ p {
   .user {
     display: none;
   }
+
+  .my-border {
+    border: 1px solid #e7e7e7;
+  }
 }
