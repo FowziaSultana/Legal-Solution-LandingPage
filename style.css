@@ -148,13 +148,62 @@ p {
   .my-caption {
     top: 5%;
   }
+  .my-caption > h5 {
+    font-size: 14px;
+    margin: 0;
+  }
   .my-caption > p {
     font-size: 8px !important;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
   }
-  .user {
+  /* .user {
     display: none;
+  } */
+  .user {
+    width: 20%;
+  }
+
+  .my-border {
+    border: 1px solid #e7e7e7;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1199px) {
+  /* ---------------------------------------header responsive begin------------------------ */
+
+  .banner {
+    max-width: 100%;
+    height: 100%;
+  }
+  .lh-search-btn {
+    width: 60px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .banner-input {
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+  }
+  /* ---------------------------------------practice area responsive begin------------------------ */
+
+  .practice_areas div {
+    border: 1px solid #e7e7e7 !important;
+    background: linear-gradient(
+      180deg,
+      #f3f3f3 0%,
+      rgba(243, 243, 243, 0) 100%
+    );
+  }
+  /* ---------------------------------------slider responsive begin------------------------ */
+  .my-caption {
+    top: 10%;
+  }
+  .my-caption > p {
+    font-size: 12px !important;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
 
   .my-border {
